@@ -44,7 +44,7 @@ def create_feed_checker(feed_url):
         if entry.id != db.get_link(feed_url).link:
                        # ↓ Edit this message as your needs.
             if "eztv.re" in entry.link:   
-                message = f"{mirr_cmd} {entry.torrent_magneturi} \n\nTitle ⏩ {entry.title} \n\n⚠️ EZTV"
+                message = f"{mirr_cmd} {entry.links[1]['href']} \n\nTitle ⏩ {entry.title} \n\n⚠️ EZTV"
             elif "yts.mx" in entry.link:
                 message = f"{mirr_cmd} {entry.links[1]['href']} \n\nTitle ⏩ {entry.title} \n\n⚠️ YTS"
             elif "rarbg" in entry.link:
