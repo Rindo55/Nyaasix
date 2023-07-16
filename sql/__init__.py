@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 if os.path.exists("config.env"):
     load_dotenv("config.env")
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = "sqldbtype://YOUR_USER:Anime@2022@0.0.0.0/YOUR_DB_NAME"
 
 def start() -> scoped_session:
     engine = create_engine(DATABASE_URL)
