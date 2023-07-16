@@ -12,12 +12,12 @@ try:
     api_id = 10247139   # Get it from my.telegram.org
     api_hash = "96b46175824223a33737657ab943fd6a"   # Get it from my.telegram.org
     feed_urls = "https://siftrss.com/f/1LNyVoo9RP" # RSS Feed URL of the site.
-    bot_token = "6260118289:AAGh0xHLLAVaBOed8sPMFEoL5QhwNDN-qvc"]   # Get it by creating a bot on https://t.me/botfather
-    log_channel = int(os.environ["LOG_CHANNEL"])   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
+    bot_token = "6260118289:AAGh0xHLLAVaBOed8sPMFEoL5QhwNDN-qvc"   # Get it by creating a bot on https://t.me/botfather
+    log_channel = -1001900103251   # Telegram Channel ID where the bot is added and have write permission. You can use group ID too.
     check_interval = 30   # Check Interval in seconds.  
     max_instances = 3  # Max parallel instance to be used.
-    str_session = False    #String session generate using your tg mobile number for sending mirror cmd on your behalf. Generate using python gen_str.py
-    mirr_chat = 1900103251    #Group/chat_id of mirror chat or mirror bot to send mirror cmd
+    str_session = ""    #String session generate using your tg mobile number for sending mirror cmd on your behalf. Generate using python gen_str.py
+    mirr_chat = ""     #Group/chat_id of mirror chat or mirror bot to send mirror cmd
     mirr_cmd = ""    #if you have changed default cmd of mirror bot, replace this.
 except Exception as e:
     print(e)
